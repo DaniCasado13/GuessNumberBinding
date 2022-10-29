@@ -18,7 +18,21 @@ import com.danicc.guessnumberfragment.databinding.FragmentPlayBinding;
 
 import java.util.Random;
 
-
+/**
+ * Clase  que recibe el nombre del usuario y el numero de intentos que utilizara para jugar en un
+ * objeto de la clase juego(nombre,numeroIntentos) enviada por el config fragment
+ * <p>
+ * Al pulsar sobre el boton probar se comprobara si el numero introducido es mayor menor o igual
+ * que el creado como random en esta clase y se actuara segun el caso.
+ * <p>
+ * al pulsar sobre el boton borrar se dejara vacio el campo para introducir un numero
+ * <p>
+ * finalmente se envia a traves de un bundle si se ha acertado o no, el numero de intentos
+ * gastados y el numero aleatorio a adivinar.
+ *
+ * @author Dani Casado
+ * @version 1.0
+ */
 public class PlayFragment extends Fragment {
     FragmentPlayBinding binding;
     Random rnd = new Random();
@@ -59,12 +73,13 @@ public class PlayFragment extends Fragment {
             BorrarCampos();
         });
     }
-
+    //metodo encargado de borrar los editext
     private void BorrarCampos() {
         binding.etNumeroIntentado.setText("");
         binding.tvInfo.setText("_");
     }
 
+    //metodo para comprobar si el numero es correcto/menor/mayor
     private void ProbarNumero() {
         if (!ComprobarCampoVacio()) {
             if (ComprobarDigito()) {

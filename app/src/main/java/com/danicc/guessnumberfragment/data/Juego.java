@@ -4,7 +4,11 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 import java.io.Serializable;
-
+/**
+ * Clase modelo que contiene el nombre del usuario y el numero de intentos que utilizara para jugar
+ * @author Dani Casado
+ * @version 1.0
+ */
 public class Juego implements Serializable, Parcelable {
     String nombre;
     int numeroIntentos;

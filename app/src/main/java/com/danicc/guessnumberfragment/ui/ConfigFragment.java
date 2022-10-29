@@ -17,7 +17,14 @@ import com.danicc.guessnumberfragment.GuessNumberApplication;
 import com.danicc.guessnumberfragment.R;
 import com.danicc.guessnumberfragment.data.Juego;
 import com.danicc.guessnumberfragment.databinding.FragmentConfigBinding;
-
+/**
+ * Clase  que recoge el nombre del usuario y el numero de intentos que utilizara para jugar en un
+ * objeto de la clase juego(nombre,numeroIntentos) y envia dicho objeto
+ * a la activity controladora del juego mediante el evento Onclick del boton
+ *
+ * @author Dani Casado
+ * @version 1.0
+ */
 public class ConfigFragment extends Fragment {
     FragmentConfigBinding binding;
     private GuessNumberApplication application;
@@ -53,7 +60,7 @@ public class ConfigFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+        //OnClick a traves de una expresion lambda
         binding.btnJugar.setOnClickListener(v -> {
             Play();
         });

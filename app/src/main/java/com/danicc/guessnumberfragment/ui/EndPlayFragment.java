@@ -12,7 +12,16 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.danicc.guessnumberfragment.R;
 import com.danicc.guessnumberfragment.databinding.FragmentEndPlayBinding;
-
+/**
+ * clase que responde segun si se ha superado el juego o no mediante el dato recibido en el bundle
+ *<p>
+ * si el booleano recibido es true: se informa de que se ha ganado el juego y el numero
+ * de intentos necesarios.
+ *<p>
+ * si el booleano recibido es false: se informa de que se ha perdido y se muestra el numero oculto.
+ * @author Dani Casado
+ *  * @version 1.0
+ */
 
 public class EndPlayFragment extends Fragment {
     FragmentEndPlayBinding binding;

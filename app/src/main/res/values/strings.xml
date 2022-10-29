@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GuessNumberFragment</string>
+
+    <string name="etNombreUser">nombre</string>
+    <string name="etIntentos">intentos</string>
+    <string name="btnJugar">¡A Jugar!</string>
+    <string name="tvInfo">_</string>
+    <string name="btnBorrar">Borrar</string>
+    <string name="btnProbar">Comprobar</string>
+    <string name="tvtextoplay">introduce un numero</string>
+    <string name="hintNumeroIntentado">numero</string>
+    <string name="tvFinalMessage">_</string>
+    <string name="ErrorEmpty">Ningun dato puede estar vacio</string>
+    <string name="ErrorZero">El numero de intentos debe ser al menos 1</string>
+    <string name="msgMayor">El numero que buscas es mayor</string>
+    <string name="msgMenor">El numero que buscas es menor</string>
+    <string name="ErrorType">El digito introducido no es valido</string>
+    <string name="btnVolver">Volver a jugar</string>
+    <string name="ganado">has ganado en</string>
+    <string name="intentos">intentos</string>
+    <string name="perdido"><![CDATA[perdiste el numero era ->]]></string>
+</resources>

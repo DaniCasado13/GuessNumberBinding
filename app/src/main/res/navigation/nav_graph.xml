@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ConfigFragment">
+<activity
+    android:id="@+id/ActivityMain"
+    android:name="com.danicc.guessnumberfragment.ui.MainActivity"
+    android:label="MainActivity"
+    tools:layout="@layout/activity_main">
+
+</activity>
+    <fragment
+        android:id="@+id/ConfigFragment"
+        android:name="com.danicc.guessnumberfragment.ui.ConfigFragment"
+        android:label="configFragment"
+        tools:layout="@layout/fragment_config">
+
+        <action
+            android:id="@+id/action_ConfigFragment_to_PlayFragment"
+            app:destination="@id/PlayFragment" />
+        <action
+            android:id="@+id/action_ConfigFragment_to_aboutActivity"
+            app:destination="@id/aboutActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/PlayFragment"
+        android:name="com.danicc.guessnumberfragment.ui.PlayFragment"
+        android:label="PlayFragment"
+        tools:layout="@layout/fragment_play">
+
+        <action
+            android:id="@+id/action_PlayFragment_to_EndPlayFragment"
+            app:destination="@id/EndPlayFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/EndPlayFragment"
+        android:name="com.danicc.guessnumberfragment.ui.EndPlayFragment"
+        android:label="EndPlayFragment"
+        tools:layout="@layout/fragment_end_play" >
+        <action
+            android:id="@+id/action_EndPlayFragment_to_ConfigFragment"
+            app:destination="@id/ConfigFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <activity
+        android:id="@+id/aboutActivity"
+        android:name="com.danicc.guessnumberfragment.ui.AboutActivity"
+        android:label="activity_about"
+        tools:layout="@layout/activity_about" />
+</navigation>

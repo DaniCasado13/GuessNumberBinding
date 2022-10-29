@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GuessNumberFragment</string>
+    <string name="etNombreUser">name</string>
+    <string name="etIntentos">attemps</string>
+    <string name="btnJugar">¡Play!</string>
+    <string name="tvInfo">_</string>
+    <string name="btnBorrar">Erase</string>
+    <string name="btnProbar">Chech</string>
+    <string name="hintNumeroIntentado">number</string>
+    <string name="tvFinalMessage">_</string>
+    <string name="tvtextoplay">Enter a number</string>
+    <string name="ErrorEmpty">No data can be empty</string>
+    <string name="ErrorZero">The number of attempts must be at least 1</string>
+    <string name="msgMayor">The number you are looking for is greater</string>
+    <string name="msgMenor">The number you are looking for is less</string>
+    <string name="ErrorType">The entered digit is not valid</string>
+    <string name="btnVolver">Play again</string>
+    <string name="ganado">"you win in "</string>
+    <string name="intentos">attemps</string>
+    <string name="perdido">you lose, the number was -></string>
+</resources>

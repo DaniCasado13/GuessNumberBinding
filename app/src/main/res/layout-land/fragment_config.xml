@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="juego"
+            type="com.danicc.guessnumberfragment.data.Juego"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.ConfigFragment">
+
+        <EditText
+            android:id="@+id/etNombreUser"
+            android:layout_width="@dimen/etNombreUserwidth"
+            android:layout_height="@dimen/etNombreUserHeight"
+            android:layout_marginTop="@dimen/etnombreusermargintopland"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="@dimen/etnombreuserheigthland"
+            android:text="@={juego.nombre}"
+            android:textColorHint="@color/textcolorhint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etIntentos"
+            android:layout_width="@dimen/etNombreUserwidth"
+            android:layout_height="@dimen/etNombreUserHeight"
+            android:layout_marginTop="@dimen/etintentosmargintopland"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:minHeight="@dimen/etNombreUserHeight"
+            android:text="@{Integer.toString(juego.numeroIntentos)}"
+            android:textColorHint="@color/textcolorhint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNombreUser" />
+
+        <Button
+            android:id="@+id/btnJugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/btnjugarmargintop"
+            android:text="@string/btnJugar"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etIntentos" />
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="etNombreUserwidth">82dp</dimen>
+    <dimen name="etNombreUserHeight">48dp</dimen>
+    <dimen name="etNombreUserMarginStart">140dp</dimen>
+    <dimen name="etNombreUserMarginTop">100dp</dimen>
+    <dimen name="tvFinalMessagelayoutWidth">0dp</dimen>
+    <dimen name="tvFinalMessagelayoutHeight">78dp</dimen>
+    <dimen name="tvFinalMessageMargintop">132dp</dimen>
+    <dimen name="tvTextoPlayMarginStart">56dp</dimen>
+    <dimen name="tvTextoPlayMarginStop">104dp</dimen>
+    <dimen name="etnumerointentadoStart">16dp</dimen>
+    <dimen name="etnumerointentadoEnd">16dp</dimen>
+    <dimen name="etnumerointentadoMingHeigth">48dp</dimen>
+    <dimen name="tvinfowidth">292dp</dimen>
+    <dimen name="tvinfoheigth">49dp</dimen>
+    <dimen name="tvinfomarginstart">64dp</dimen>
+    <dimen name="tvinfomargintop">224dp</dimen>
+    <dimen name="marginendbtnprobar">120dp</dimen>
+    <dimen name="btnprobarmarginboton">300dp</dimen>
+    <dimen name="marginstarbtnend">260dp</dimen>
+    <dimen name="etintentosmargintopland">44dp</dimen>
+    <dimen name="etnombreusermargintopland">64dp</dimen>
+    <dimen name="etnombreuserheigthland">48dp</dimen>
+    <dimen name="btnjugarmargintop">44dp</dimen>
+    <dimen name="btnvolvermargintop">196dp</dimen>
+    <dimen name="btnvolvermargintopland">68dp</dimen>
+</resources>

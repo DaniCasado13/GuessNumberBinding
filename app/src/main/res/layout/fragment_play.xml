@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+<variable
+    name="juego"
+    type="com.danicc.guessnumberfragment.data.Juego" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.PlayFragment">
+
+        <TextView
+            android:id="@+id/tvtextoplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tvTextoPlayMarginStart"
+            android:layout_marginTop="@dimen/tvTextoPlayMarginStop"
+            android:text="@string/tvtextoplay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+
+            android:id="@+id/etNumeroIntentado"
+            android:layout_width="152dp"
+            android:layout_height="94dp"
+            android:layout_marginStart="@dimen/etnumerointentadoStart"
+            android:layout_marginEnd="@dimen/etnumerointentadoEnd"
+            android:ems="10"
+            android:hint="@string/hintNumeroIntentado"
+            android:inputType="number"
+            android:minHeight="@dimen/etnumerointentadoMingHeigth"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvtextoplay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tvtextoplay" />
+
+        <TextView
+            android:id="@+id/tvInfo"
+
+            android:layout_width="@dimen/tvinfowidth"
+            android:layout_height="@dimen/tvinfoheigth"
+            android:layout_marginStart="@dimen/tvinfomarginstart"
+            android:layout_marginTop="@dimen/tvinfomargintop"
+            android:text="@string/tvInfo"
+            app:layout_constraintStart_toEndOf="@id/etNumeroIntentado"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnProbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/marginendbtnprobar"
+            android:onClick="OnClick"
+            android:layout_marginBottom="@dimen/btnprobarmarginboton"
+            android:text="@string/btnProbar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnBorrar" />
+
+        <Button
+            android:id="@+id/btnBorrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnClick"
+            android:layout_marginStart="@dimen/marginstarbtnend"
+            android:layout_marginBottom="@dimen/btnprobarmarginboton"
+            android:text="@string/btnBorrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

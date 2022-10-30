@@ -65,6 +65,16 @@ A continuacion se muestra el grafo de navegacion asi como el codigo que inicia l
 
 ![codnav](https://user-images.githubusercontent.com/71752283/198864508-a8cd5eea-1f44-49e1-8e92-490c8122a4d2.JPG)
 
+<h1> Ampliacion</h1><br>
+Se ha creado un recurso de tipo color para añadirlo al tema de la aplicacion y asi cambiar el aspecto visual de esta.
+
+![colors](https://user-images.githubusercontent.com/71752283/198902573-0481d98e-e2b5-4d40-985a-1a797faf2594.JPG)
+
+
+![colortema](https://user-images.githubusercontent.com/71752283/198902603-604442c2-3f84-48a4-a30c-a1c981a970ae.JPG)
+
+
+
 Documentacion utilizada
 
 https://moronlu18.com/wordpress/

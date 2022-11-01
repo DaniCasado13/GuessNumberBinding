@@ -14,6 +14,6 @@ public class GuessNumberApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        juego=new Juego("Dani",7);
+        juego=new Juego("Dani",5);
     }
 }

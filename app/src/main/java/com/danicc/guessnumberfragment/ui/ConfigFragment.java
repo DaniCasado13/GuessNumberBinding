@@ -76,13 +76,9 @@ public class ConfigFragment extends Fragment {
             if (IntentosValidos()) {
                 Toast.makeText(getContext(), R.string.ErrorZero, Toast.LENGTH_LONG).show();
             } else {
-                //creo un nuevo juego
-                Juego juego = new Juego();
-                //seteo los valores con los valores recibidos de los editext
-                juego.setNombre(binding.etNombreUser.getText().toString());
-                juego.setNumeroIntentos(Integer.parseInt(binding.etIntentos.getText().toString()));
-                //creamos el bundle
+
                 Bundle bundle = new Bundle();
+                Juego juego = binding.getJuego();
                 bundle.putSerializable("juego", juego);
                 //navegamos de un fragment a otro con el navhostfragment pasando el bundle como argumento
                 NavHostFragment.findNavController(this).navigate(R.id.action_ConfigFragment_to_PlayFragment, bundle);

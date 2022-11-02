@@ -37,7 +37,6 @@ public class PlayFragment extends Fragment {
     FragmentPlayBinding binding;
     Random rnd = new Random();
     int rndint = rnd.nextInt(100) + 1;
-    Juego juego;
     int maxIntentos;
     String nombreJugador;
     boolean acertado = false;
@@ -51,21 +50,25 @@ public class PlayFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = FragmentPlayBinding.inflate(getLayoutInflater());
+        Bundle bundle = getArguments();
+        Juego juego = bundle.getParcelable("juego");
+        binding.setJuego(juego);
+        maxIntentos = juego.getNumeroIntentos();
+        nombreJugador = juego.getNombre();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         return binding.getRoot();
+
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        juego = (Juego) getArguments().getSerializable("juego");
 
-        maxIntentos = juego.getNumeroIntentos();
-        nombreJugador = juego.getNombre();
         binding.btnProbar.setOnClickListener(v -> {
             ProbarNumero();
         });
@@ -73,6 +76,7 @@ public class PlayFragment extends Fragment {
             BorrarCampos();
         });
     }
+
     //metodo encargado de borrar los editext
     private void BorrarCampos() {
         binding.etNumeroIntentado.setText("");

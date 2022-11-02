@@ -76,10 +76,10 @@ public class ConfigFragment extends Fragment {
             if (IntentosValidos()) {
                 Toast.makeText(getContext(), R.string.ErrorZero, Toast.LENGTH_LONG).show();
             } else {
-
+                binding.setJuego(new Juego(binding.etNombreUser.getText().toString(),Integer.parseInt(binding.etIntentos.getText().toString())));
                 Bundle bundle = new Bundle();
                 Juego juego = binding.getJuego();
-                bundle.putSerializable("juego", juego);
+                bundle.putParcelable("juego", juego);
                 //navegamos de un fragment a otro con el navhostfragment pasando el bundle como argumento
                 NavHostFragment.findNavController(this).navigate(R.id.action_ConfigFragment_to_PlayFragment, bundle);
             }
